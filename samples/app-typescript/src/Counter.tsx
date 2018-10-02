@@ -1,10 +1,15 @@
 import * as React from 'react';
+import styles from "./Counter.module.scss";
+
+console.log(styles);
 
 class Counter extends React.Component {
     public render() {
         return (
             <div className="Counter">
-                <h2>Counter</h2>
+                <button>Dec</button>
+                <span>0</span>
+                <button>Inc</button>
             </div>
         );
     }

@@ -1,3 +1,5 @@
 profiling 
 react development tools
 testability
+Call ReactDOM.render twice
+error boundary
