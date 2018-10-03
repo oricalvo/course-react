@@ -3,3 +3,6 @@ react development tools
 testability
 Call ReactDOM.render twice
 error boundary
+PureComponent
+defaultProps ?
+ReactDOM.findDOMNode(this);
