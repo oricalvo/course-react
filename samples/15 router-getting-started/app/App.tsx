@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {Home} from "./Home";
 import {About} from "./About";
 import styles from "./App.scss";
+import {ContactDetails} from "./ContactDetails";
 
 export class App extends React.Component {
     constructor(props) {
@@ -19,6 +20,7 @@ export class App extends React.Component {
 
                 <Route exact path="/" component={Home}/>
                 <Route path="/about" component={About}/>
+                <Route path="/contact/:id" component={ContactDetails}/>
             </div>
         </Router>
     }

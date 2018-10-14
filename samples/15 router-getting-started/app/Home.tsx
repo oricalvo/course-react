@@ -1,7 +1,12 @@
 import * as React from "react";
+import {appStore} from "./appStore";
 
 export interface HomeState {
     contacts: Contact[];
+}
+
+export interface HomeProps {
+    history: any;
 }
 
 export interface Contact {
@@ -10,31 +15,29 @@ export interface Contact {
 }
 
 
-export class Home extends React.Component<{}, HomeState> {
+export class Home extends React.Component<HomeProps, HomeState> {
+    history;
+
     constructor(props) {
         super(props);
 
-        this.state = {
-            contacts: [
-                {"id": 1, "name": "Ori"},
-                {"id": 2, "name": "Roni"},
-                {"id": 3, "name": "Udi"},
-                {"id": 4, "name": "Tommy"},
-            ]
-        }
+        this.history = this.props.history;
     }
 
     render() {
-        const {contacts} = this.state;
+        const {contacts} = appStore;
 
         return <div>
             <h1>Home</h1>
             <ul>
-                {contacts.map(c => <li onClick={() => this.onContactClicked(c)}>{c.name}</li>)}
+                {contacts.map(c => <li key={c.id} onClick={() => this.onContactClicked(c)}>{c.name}</li>)}
             </ul>
         </div>
     }
 
     onContactClicked(contact: Contact) {
+        console.log(contact.id);
+
+        this.history.push("/contact/" + contact.id);
     }
 }

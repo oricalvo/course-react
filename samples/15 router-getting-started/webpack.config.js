@@ -18,7 +18,8 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/', //must be set, else, historyApiFallback does not work for nested route
     },
     devtool: "source-map",
     module: {

@@ -6,3 +6,6 @@ error boundary
 PureComponent
 defaultProps ?
 ReactDOM.findDOMNode(this);
+react development tools
+
+https://babeljs.io/repl/#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwFQlgtgpgTgBAegHxA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=6.26.0&envVersion=
