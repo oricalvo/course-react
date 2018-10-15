@@ -1,0 +1,29 @@
+.contacts {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-item {
+  padding: 0.5em;
+  border-bottom: 1px solid lightgray;
+
+  &:first-child {
+    border-top: 1px solid lightgray;
+  }
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+.header {
+  padding: 0.5em;
+  color: cornflowerblue;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

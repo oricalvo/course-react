@@ -1,0 +1,19 @@
+.App {
+  background-color: red;
+}
+
+.menu {
+  background-color: black;
+  padding: 0.5em;
+}
+
+.link {
+  margin-right: 1em;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

@@ -6,7 +6,8 @@ const cssLoader = {
     loader: 'css-loader',
     options: {
         modules: true,
-        localIdentName: '[name]_[local]--[hash:base64:5]'
+        localIdentName: '[name]_[local]--[hash:base64:5]',
+        camelCase: true,
     }
 };
 
